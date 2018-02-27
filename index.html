@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,6 +16,13 @@
         <p>Name: {{name}}</p>
         <p>Age: {{age}}</p>
         <p>{{message}}</p>
+        <div>
+            <a v-bind:href="website">About me</a>
+        </div>
+        <div>
+            <input v-bind:value="name">
+        </div>
+        <div v-html="inputTag"></div>
     </div>
 </body>
 <script src="app.js"></script>
