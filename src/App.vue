@@ -5,17 +5,29 @@
     <br><br>
     
     <First></First>
+    <Second v-bind:subjects="subjects"></Second>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import First from "./components/First";
+import Second from "./components/Second";
+import Footer from "./components/Footer";
+
 export default {
   name: "app",
   components: {
     HelloWorld,
-    First
+    First,
+    Second,
+    Footer
+  },
+  data() {
+    return {
+      subjects: ["HTML", "CSS", "Nodejs", "Laravel"]
+    };
   }
 };
 </script>
