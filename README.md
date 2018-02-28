@@ -1,3 +1,3 @@
 # learn-vuejs
-git tag -l "data + method"
+git tag <tagname>
 git push origin --tags
